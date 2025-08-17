@@ -5,14 +5,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 
 html {
-  font-size: 0.81rem;
+  font-size: 0.8rem;
 }
 
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
-  overflow-y: scroll;
   min-height: 100vh;
+  overflow: hidden;
   background-color: hsl(210, 46%, 95%);
   font-family: "Barlow Semi Condensed", sans-serif;
 }
@@ -37,7 +37,26 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 801px) {
-  section > * {
+  body{
+    overflow: auto;
+  }
+  section > :nth-child(1){
+    grid-column: span 4;
+    grid-row: span 1;
+  }
+  section > :nth-child(2){
+    grid-column: span 4;
+    grid-row: span 1;
+  }
+  section > :nth-child(3){
+    grid-column: span 4;
+    grid-row: span 1;
+  }
+  section > :nth-child(4){
+    grid-column: span 4;
+    grid-row: span 1;
+  }
+  section > :nth-child(5){
     grid-column: span 4;
     grid-row: span 1;
   }
