@@ -33,11 +33,11 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
 
   return (
     <div
-      className={`flex flex-col gap-3.5 rounded-lg p-6 md:p-8 shadow-md ${
+      className={`flex flex-col gap-[14px] rounded-lg px-[2.7rem] py-[3rem] shadow-[0_10px_20px_5px_rgba(0,0,0,0.15)] ${
         variantStyles[variant]
       } ${
         hasQuoteBg
-          ? "bg-quotation-pattern bg-no-repeat bg-[top_right_18%] bg-[length:100px_auto]"
+          ? "md:bg-quotation-pattern md:bg-no-repeat md:bg-[top_right_14%] md:bg-[length:100px_auto]"
           : ""
       } ${className}`}
     >
@@ -57,7 +57,15 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         </div>
       </div>
       <h2 className="text-xl font-semibold leading-tight">{highlight}</h2>
-      <p className="text-sm opacity-50 leading-relaxed">{content}</p>
+      <p
+        className={`text-sm leading-relaxed ${
+          variant === "white" || variant === "light-gray"
+            ? "opacity-50"
+            : "opacity-80"
+        }`}
+      >
+        "{content}"
+      </p>
     </div>
   );
 };
