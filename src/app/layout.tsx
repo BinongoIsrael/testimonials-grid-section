@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Testimonials App",
   description: "A testimonials grid built with Next.js and Tailwind CSS",
   icons: {
-    icon: "/images/my-favicon.ico",
+    icon: "/images/favicon.png",
   },
 };
 
