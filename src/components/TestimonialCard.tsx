@@ -64,7 +64,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
             : "opacity-80"
         }`}
       >
-        "{content}"
+        &quot;{content}&quot;
       </p>
     </div>
   );
